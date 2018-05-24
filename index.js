@@ -79,6 +79,9 @@ GAME.appendChild(rock)
    */
   function moveRock() {
     // implement me!
+    
+     rock.style.top = `${top += 2}px`
+    
     // (use the comments below to guide you!)
     /**
      * If a rock collides with the DODGER,
