@@ -85,6 +85,7 @@ GAME.appendChild(rock)
      * we should call endGame()
      */
 
+//??
 
 if(checkCollision(rock)) {
   return endGame()
@@ -128,6 +129,12 @@ else {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
+  clearInterval(gameInterval)
+  ROCKS.forEach(function(rock) {
+  rock.remove()
+  )}
+  window.removeEventListener('keydown', moveDodger)
+  alert ("YOU LOSE!")
 }
 
 function moveDodger(e) {
