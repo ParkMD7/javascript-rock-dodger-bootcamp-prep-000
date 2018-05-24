@@ -85,8 +85,6 @@ GAME.appendChild(rock)
      * we should call endGame()
      */
 
-//??
-
 if(checkCollision(rock)) {
   return endGame()
 }
