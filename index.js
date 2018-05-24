@@ -172,10 +172,10 @@ function moveDodgerLeft() {
   function move() {
     var left = positionToInteger(Dodger.style.left)
     if (left > 0) {
-      DODGER.style.left = 
+      DODGER.style.left = `${left - 4}px`
     }
   }
-  
+  window.requestAnimationFrame(move)
 }
 
 function moveDodgerRight() {
