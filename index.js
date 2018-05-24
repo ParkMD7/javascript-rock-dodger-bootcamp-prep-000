@@ -170,7 +170,7 @@ function moveDodgerLeft() {
    */
 
   function move() {
-    var left = positionToInteger(Dodger.style.left)
+    var left = positionToInteger(DODGER.style.left)
     if (left > 0) {
       DODGER.style.left = `${left - 4}px`
     }
